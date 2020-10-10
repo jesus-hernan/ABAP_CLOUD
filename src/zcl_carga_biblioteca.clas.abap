@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ZCL_CARGA_BIBLIOTECA IMPLEMENTATION.
+CLASS zcl_carga_biblioteca IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -52,9 +52,9 @@ CLASS ZCL_CARGA_BIBLIOTECA IMPLEMENTATION.
     ( bi_categ ='H' descripcion ='Geografía, historia') ).
 
     "Delete possible entries; insert new entries
-    DELETE FROM ztb_catego.
-
-    INSERT ztb_catego FROM TABLE @lt_catego.
+*    DELETE FROM ztb_catego.
+*
+*    INSERT ztb_catego FROM TABLE @lt_catego.
 
 ******** ZTB_CATEGO ********
     "fill internal table
